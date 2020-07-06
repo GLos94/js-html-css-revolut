@@ -10,6 +10,8 @@
   padding: 2% 5%;
 }
 
+
+/* regole header */
 header{
   padding: 2% 5%;
   background-color: #f1f1f1;
@@ -36,7 +38,105 @@ header #barra-superiore a{
   color: grey;
 }
 
+header #barra-superiore a:hover{
+  color: black;
+}
+
+
+/* regole main */
+
+.main-navbar{
+  position: relative;
+}
+
+.main-navbar .menu-navbar li{
+  display: inline-block;
+  list-style: none;
+  padding: 0 2%;
+}
+
+
+.main-navbar .menu-navbar a{
+  text-decoration: none;
+  color: grey;
+}
+
+.main-navbar .menu-navbar a:hover{
+  color: black;
+}
+
+.main-navbar .menu-navbar{
+  line-height: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-square{
+  display: none;
+  width: 238px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 2% 2%;
+}
+
+.dropdown-denaro li, .dropdown-investimenti li, .dropdown-controllo li, .dropdown-altro li, .dropdown-plans li{
+  list-style: none;
+  margin-bottom: 8%;
+}
+
+.dropdown-denaro a, .dropdown-investimenti a, .dropdown-controllo a, .dropdown-altro a, .dropdown-plans a{
+  text-decoration: none;
+  color: grey;
+}
+
+
+.download-button{
+  position: absolute;
+  top: 2px;
+  right: 36px;
+  padding: 1% 1%;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
+
 
 .menu-mobile{
   display: none;
+}
+
+
+/* regole jumbotron */
+.jumbotron{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.jumbotron > .testo{
+  margin-left: 2%;
+}
+
+.jumbotron h1{
+  padding-bottom: 3%;
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.jumbotron p{
+  color: grey;
+  line-height: 30px;
+}
+
+.jumbotron img{
+  margin-left: 25%;
+  width: 30%;
+  height: auto;
+}
+
+.jumbotron button{
+  padding: 1% 5%;
+  border-radius: 5px;
+  background-color: black;
+  color: grey;
 }
