@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+#wrapper{
+  padding: 2% 5%;
+}
+
+header{
+  padding: 2% 5%;
+  background-color: #f1f1f1;
+}
+
+.barra-superiore::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+header #barra-superiore li:nth-child(3), #barra-superiore li:last-child{
+  float: right;
+}
+
+header #barra-superiore li{
+  display: inline-block;
+  list-style: none;
+  padding: 0 2%;
+}
+
+header #barra-superiore a{
+  text-decoration: none;
+  color: grey;
+}
+
+
+.menu-mobile{
+  display: none;
+}
