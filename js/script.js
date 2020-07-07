@@ -24,15 +24,12 @@ $(document).ready(function() {
       $('.download-jumbo').show();
   });
 
+
+
   $('.menu-mobile li').click(function() {
-    $(this).children('.dropdown-mobile').show();
+    $(this).children('.dropdown-mobile').toggle();
 
   });
-
-  $('.menu-mobile li').click(function() {
-    $(this).children('.dropdown-mobile').hide();
-
-  })
 
 
 });

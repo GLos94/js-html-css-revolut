@@ -281,9 +281,10 @@ header{
 }
 
 
-.menu-mobile{
-  display: block;
+.dropdown-menu{
+  display: none;
 }
+
 
 .download-mobile{
   display: block;
