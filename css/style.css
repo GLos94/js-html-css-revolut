@@ -50,9 +50,8 @@ header #barra-superiore a:hover{
 }
 
 .main-navbar .menu-navbar li{
-  display: inline-block;
   list-style: none;
-  padding: 0 2%;
+  padding: 2% 2%;
 }
 
 
@@ -72,24 +71,26 @@ header #barra-superiore a:hover{
 }
 
 .dropdown-square{
-  position: relative;
+  position: absolute;
+  top: 60px;
   display: none;
-  width: 238px;
-  /* border: 1px solid lightgrey; */
-  border-radius: 5px;
-  padding: 2% 2%;
+  background-color: white;
+  box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  padding: 1% 1%;
+  z-index: 99;
 }
 
 .dropdown-content{
   display: inline-block;
-  position: absolute;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  position: relative;
+  z-index: 99;
 }
 
 .dropdown-content li{
   list-style: none;
-  margin-bottom: 8%;
+  margin: 5% 0;
+  line-height: 1.3;
 }
 
 .dropdown-content a{
@@ -101,7 +102,7 @@ header #barra-superiore a:hover{
 
 .download-button{
   position: absolute;
-  top: 2px;
+  top: 26px;
   right: 36px;
   padding: 1% 1%;
   border-radius: 5px;
@@ -144,8 +145,34 @@ header #barra-superiore a:hover{
 }
 
 .jumbotron button{
-  padding: 1% 5%;
+  padding: 2% 6%;
   border-radius: 5px;
-  background-color: black;
+  background-color: #4c4646;
+  color: lightgrey;
+}
+
+input{
+  padding-top: 10%;
+  padding-bottom: 1%;
+  border: none;
+  border-bottom: 1px solid lightgrey;
+  color: lightgrey;
+}
+
+.nazione{
+  width: 60px;
+  margin-right: -2%;
+  color: black;
+}
+
+.numero{
+  margin-left: 2%;
+}
+
+article{
+  padding-top: 10%;
+}
+
+.fa-angle-down{
   color: grey;
 }
