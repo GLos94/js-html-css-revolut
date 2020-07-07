@@ -1,34 +1,3 @@
-// $(document).ready(function() {
-//
-//   var itemCliccato = $('.menu-navbar li');
-//   var dropActive = $('.dropdown-square.active');
-//   itemCliccato.click(function () {
-//   dropActive.removeClass('active');
-//     $(this).siblings().addClass('active');
-//     console.log(dropActive);
-//    })
-//
-//    if (dropActive.hasClass('active')) {
-//      itemCliccato.mouseenter(function () {
-//         $('.dropdown-square').toggle();
-//       });
-//    }
-//
-//    $('dropdown-square').eq();
-//    console.log('dropdown-square'.length);
-//
-//  });
-
-
-   // $(document).ready(function() {
-   //  $('.menu-navbar li').mouseenter(function() {
-   //    $('.dropdown-square').toggle();
-   //   });
-   // });
-
-
-
-
 $(document).ready(function() {
   $('.menu-navbar li').mouseenter(function() {
     $(this).children('.dropdown-square').show();
@@ -37,5 +6,33 @@ $(document).ready(function() {
   $('.menu-navbar li').mouseleave(function() {
       $(this).children('.dropdown-square').hide();
   });
+
+
+  $('.fa-bars').click(function(){
+      $('.menu-mobile').show();
+      $('.fa-bars').hide();
+      $('.close').show();
+      $('.jumbotron').hide();
+      $('.download-jumbo').hide();
+  });
+
+  $('.close').click(function(){
+      $('.menu-mobile').hide();
+      $('.close').hide();
+      $('.fa-bars').show();
+      $('.jumbotron').show();
+      $('.download-jumbo').show();
+  });
+
+  $('.menu-mobile li').click(function() {
+    $(this).children('.dropdown-mobile').show();
+
+  });
+
+  $('.menu-mobile li').click(function() {
+    $(this).children('.dropdown-mobile').hide();
+
+  })
+
 
 });

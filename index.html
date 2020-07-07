@@ -20,13 +20,14 @@
           <li><a href="#">Azienda</a></li>
         </ul>
       </header>
+      <img id="logo-mobile" src="img/logo.png" alt="logo">
+      <a href="#"><i class="fas fa-bars"></i></a>
 
     <div id="wrapper">
       <main>
         <div class="main-navbar">
           <ul class="menu-navbar">
-            <li><a href="#"><img src="img/logo.png" alt="logo"></a></li>
-
+            <li><a href="#"><img id="logo" src="img/logo.png" alt="logo"></a></li>
             <li><a href="#">Denaro</a>
               <div class="dropdown-square">
                 <ul class="dropdown-content">
@@ -87,30 +88,80 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 <!-- menu in display none per la versione mobile  -->
         <div class="menu-mobile">
           <ul>
-            <li<a href="#">Denaro</li>
-            <li<a href="#">Investimenti e risparmi</li>
-            <li<a href="#">Controllo</li>
-            <li<a href="#">Altro</li>
-            <li<a href="#">Plans</li>
+            <li><a href="#">Denaro<i class="fas fa-angle-down"></i></a>
+              <div class="dropdown-mobile">
+                <ul class="content-mobile">
+                  <li><a href="#">Invia denaro all'estero</a></li>
+                  <li><a href="#">Effettua e ricevi pagamenti</a></li>
+                  <li><a href="#">Paga con Apple Pay</a></li>
+                  <li><a href="#">Paga con Gpay</a></li>
+                </ul>
+              </div>
+            </li>
+
+
+            <li><a href="#">Investimenti e risparmi<i class="fas fa-angle-down"></i></a>
+              <div class="dropdown-mobile">
+                <ul class="content-mobile">
+                  <li><a href="#">Effettua compravendite di titoli azionari</a></li>
+                  <li><a href="#">Effettua compravendite di prodotti</a></li>
+                  <li><a href="#">Effettua compravendite Crypto</a></li>
+                  <li><a href="#">Imposta i Salvadanai</a></li>
+                </ul>
+              </div>
+            </li>
+
+
+
+            <li><a href="#">Controllo<i class="fas fa-angle-down"></i></a>
+              <div class="dropdown-mobile">
+                <ul class="content-mobile">
+                  <li><a href="#">Imposta i budget</a></li>
+                  <li><a href="#">Tutelati</a></li>
+                </ul>
+              </div>
+            </li>
+
+
+
+            <li><a href="#">Altro<i class="fas fa-angle-down"></i></a>
+              <div class="dropdown-mobile">
+                <ul class="content-mobile">
+                  <li><a href="#">Assicura te stesso all'Estero</a></li>
+                  <li><a href="#">Assicura il tuo dispositivo</a></li>
+                  <li><a href="#">Dona agli enti di beneficienza</a></li>
+                  <li><a href="#">PROSSIMAMENTE</a></li>
+                  <li><a href="#">Scopri i premi</a></li>
+                </ul>
+              </div>
+            </li>
+
+
+
+            <li><a href="#">Plans<i class="fas fa-angle-down"></i></a>
+              <div class="dropdown-mobile">
+                <ul class="content-mobile">
+                  <li><a href="#">Standard</a></li>
+                  <li><a href="#">Premium</a></li>
+                  <li><a href="#">Metal</a></li>
+                  <li><a href="#">Junior</a></li>
+                  <li><a href="#">Tariffazione</a></li>
+                </ul>
+              </div>
+            </li>
+
+
+
             <hr>
-            <li<a href="#">Azienda</li>
-            <li<a href="#">Aiuto</li>
-            <li<a href="#">Seguici</li>
+            <li><a href="#">Azienda</a><i class="fas fa-angle-down"></i></li>
+            <li><a href="#">Aiuto</a><i class="fas fa-angle-down"></i></li>
+            <li><a href="#">Seguici</a><i class="fas fa-angle-down"></i></li>
           </ul>
+          <hr>
+          <button class="download-mobile" type="button" name="button">Scarica l'app</button>
             <a href="#" class="close"><i class="fas fa-times"></i></a>
         </div>
 
@@ -128,9 +179,11 @@
               </article>
           </div>
 
+
           <img src="https://assets.revolut.com/media/index/EU/home.png" alt="Revolut main screen">
 
         </div>
+        <button class="download-jumbo" type="button" name="button">Scarica l'app</button>
       </main>
 
     <script type="text/javascript" src="js/script.js"></script>

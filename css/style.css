@@ -111,7 +111,77 @@ header #barra-superiore a:hover{
 }
 
 
+.fa-bars{
+  display: none;
+}
+
 .menu-mobile{
+  display: none;
+}
+
+.menu-mobile::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.menu-mobile li{
+  list-style: none;
+  margin-bottom: 5%;
+  margin-top: 2%;
+}
+
+.menu-mobile a{
+  text-decoration: none;
+  color: grey;
+}
+
+.menu-mobile a:hover{
+  color: black;
+}
+
+.menu-mobile i{
+  float: right;
+}
+
+.close{
+  display: block;
+  color: grey;
+  position: absolute;
+  top: 30px;
+  right: 40px;
+}
+
+hr{
+  color: lightgrey;
+}
+
+.content-mobile li{
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.download-mobile{
+  display: none;
+  padding: 1% 1%;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+  margin-top: 2%;
+}
+
+.download-jumbo{
+  display: none;
+  padding: 1% 1%;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+  margin-top: 2%;
+}
+
+#logo-mobile{
   display: none;
 }
 
@@ -175,4 +245,81 @@ article{
 
 .fa-angle-down{
   color: grey;
+}
+
+
+/* regole responsiveness */
+
+@media screen and (max-width: 768px){
+
+header{
+  display: none;
+}
+
+#barra-superiore{
+  display: none;
+}
+
+#logo-mobile{
+  position: relative;
+  display: block;
+  width: 14%;
+  margin-top: 2%;
+  margin-left: 4%;
+}
+
+.main-navbar{
+  display: none;
+}
+
+.fa-bars{
+  display: block;
+  color: grey;
+  position: absolute;
+  top: 30px;
+  right: 40px;
+}
+
+
+.menu-mobile{
+  display: block;
+}
+
+.download-mobile{
+  display: block;
+}
+
+
+.jumbotron{
+  display: block;
+}
+
+
+.jumbotron > .testo{
+  width: 100%;
+  text-align: center;
+  margin-left: 0;
+}
+
+
+.testo h1{
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+
+.jumbotron img{
+  width: 50%;
+  height: auto;
+}
+
+.jumbotron input, .jumbotron i, .jumbotron button, .jumbotron article{
+  display: none;
+}
+
+.download-jumbo{
+  display: block;
+}
+
+
+
 }
