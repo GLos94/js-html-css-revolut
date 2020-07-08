@@ -3,15 +3,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-}
-
-#wrapper{
-  padding: 2% 5%;
 }
 
 
 /* regole header */
+
 header{
   padding: 2% 5%;
   background-color: #f1f1f1;
@@ -43,28 +39,33 @@ header #barra-superiore a:hover{
 }
 
 
-/* regole main */
+/* regole main navbar */
 
-.main-navbar{
+#wrapper{
+  padding: 2% 5%;
+}
+
+
+main .main-navbar{
   position: relative;
 }
 
-.main-navbar .menu-navbar li{
+main .main-navbar .menu-navbar li{
   list-style: none;
   padding: 2% 2%;
 }
 
 
-.main-navbar .menu-navbar a{
+main .main-navbar .menu-navbar a{
   text-decoration: none;
   color: grey;
 }
 
-.main-navbar .menu-navbar a:hover{
+main .main-navbar .menu-navbar a:hover{
   color: black;
 }
 
-.main-navbar .menu-navbar{
+main .main-navbar .menu-navbar{
   line-height: 10px;
   display: flex;
   align-items: center;
@@ -99,7 +100,6 @@ header #barra-superiore a:hover{
   display: block;
 }
 
-
 .download-button{
   position: absolute;
   top: 26px;
@@ -109,7 +109,6 @@ header #barra-superiore a:hover{
   background-color: black;
   color: white;
 }
-
 
 .fa-bars{
   display: none;
@@ -181,12 +180,17 @@ hr{
   margin-top: 2%;
 }
 
+.ombra-bottone{
+  display: none;
+}
+
 #logo-mobile{
   display: none;
 }
 
 
 /* regole jumbotron */
+
 .jumbotron{
   display: flex;
   justify-content: flex-start;
@@ -212,6 +216,12 @@ hr{
   margin-left: 25%;
   width: 30%;
   height: auto;
+}
+
+.jumbotron h2{
+  display: none;
+  text-align: center;
+  font-weight: 900;
 }
 
 .jumbotron button{
@@ -280,28 +290,19 @@ header{
   right: 40px;
 }
 
-
-.dropdown-menu{
-  display: none;
-}
-
-
 .download-mobile{
   display: block;
 }
 
-
 .jumbotron{
   display: block;
 }
-
 
 .jumbotron > .testo{
   width: 100%;
   text-align: center;
   margin-left: 0;
 }
-
 
 .testo h1{
   font-size: 3.5rem;
@@ -313,6 +314,11 @@ header{
   height: auto;
 }
 
+.jumbotron h2{
+  display: block;
+  padding-bottom: 2%;
+}
+
 .jumbotron input, .jumbotron i, .jumbotron button, .jumbotron article{
   display: none;
 }
@@ -321,6 +327,10 @@ header{
   display: block;
 }
 
+.ombra-bottone{
+  display: block;
+  box-shadow: 0 1px;
+}
 
 
 }

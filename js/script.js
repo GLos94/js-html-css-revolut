@@ -24,12 +24,24 @@ $(document).ready(function() {
       $('.download-jumbo').show();
   });
 
-
-
+// apertura e chiusura dropdown menu
   $('.menu-mobile li').click(function() {
     $(this).children('.dropdown-mobile').toggle();
-
   });
 
+
+// apertura liste
+
+$(".menu-mobile li").click(function(){
+    $(".content-mobile li").hide()
+    if ($(this).hasClass("open")) {
+      $(".content-mobile li").show()
+      $(".content-mobile li").removeClass("open")
+    } else {
+      $(this).next().slideToggle();
+      $(this).addClass("open")
+    }
+
+});
 
 });

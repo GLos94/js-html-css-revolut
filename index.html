@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -10,8 +10,7 @@
   </head>
   <body>
 
-
-
+<!-- header barra superiore -->
       <header>
         <ul id="barra-superiore">
           <li><a href="#">Personale</a></li>
@@ -20,9 +19,11 @@
           <li><a href="#">Azienda</a></li>
         </ul>
       </header>
+
       <img id="logo-mobile" src="img/logo.png" alt="logo">
       <a href="#"><i class="fas fa-bars"></i></a>
 
+<!-- navbar e dropdown menu -->
     <div id="wrapper">
       <main>
         <div class="main-navbar">
@@ -87,13 +88,12 @@
 
 
 
-
 <!-- menu in display none per la versione mobile  -->
         <div class="menu-mobile">
           <ul>
             <li><a href="#">Denaro<i class="fas fa-angle-down"></i></a>
               <div class="dropdown-mobile">
-                <ul class="content-mobile">
+                <ul class="content-mobile open">
                   <li><a href="#">Invia denaro all'estero</a></li>
                   <li><a href="#">Effettua e ricevi pagamenti</a></li>
                   <li><a href="#">Paga con Apple Pay</a></li>
@@ -162,10 +162,10 @@
           </ul>
           <hr>
           <button class="download-mobile" type="button" name="button">Scarica l'app</button>
-            <a href="#" class="close"><i class="fas fa-times"></i></a>
+          <a href="#" class="close"><i class="fas fa-times"></i></a>
         </div>
 
-<!-- sezione principale jumbo -->
+<!-- sezione jumbo -->
         <div class="jumbotron">
           <div class="testo">
             <h1>Ottieni di più <br> dai tuoi fondi</h1>
@@ -173,7 +173,6 @@
               <input class="nazione" type="number" name="" value="" placeholder="+39"><i class="fas fa-angle-down"></i>
               <input class="numero" type="number" name="" value="" placeholder="Numero di telefono">
               <button type="button" name="button">Inizia</button>
-
               <article class=""><i class="fas fa-clock"></i>
                 Apri un conto in pochi minuti
               </article>
@@ -181,8 +180,11 @@
 
 
           <img src="https://assets.revolut.com/media/index/EU/home.png" alt="Revolut main screen">
+          <h2><strong>Tutta la tua vita finanziaria a portata di dito</strong></h2>
+
 
         </div>
+        <hr class="ombra-bottone">
         <button class="download-jumbo" type="button" name="button">Scarica l'app</button>
       </main>
 
