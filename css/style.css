@@ -43,6 +43,7 @@ header #barra-superiore a:hover{
 
 #wrapper{
   padding: 2% 5%;
+  position: relative;
 }
 
 
@@ -116,6 +117,12 @@ main .main-navbar .menu-navbar{
 
 .menu-mobile{
   display: none;
+  position: absolute;
+  z-index: 999;
+  width: 90%;
+  height: 100%;
+  padding-right: 2%;
+  background-color: white;
 }
 
 .menu-mobile::after{
@@ -147,12 +154,16 @@ main .main-navbar .menu-navbar{
   display: block;
   color: grey;
   position: absolute;
-  top: 30px;
-  right: 40px;
+  top: -40px;
+  right: 14px;
 }
 
 hr{
   color: lightgrey;
+}
+
+.dropdown-mobile{
+  display: none;
 }
 
 .content-mobile li{
