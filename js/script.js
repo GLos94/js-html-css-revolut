@@ -1,9 +1,9 @@
 $(document).ready(function() {
-  $('.menu-navbar li').mouseenter(function() {
+  $('.menu-navbar li').mouseover(function() {
     $(this).children('.dropdown-square').show();
   });
 
-  $('.menu-navbar li').mouseleave(function() {
+  $('.menu-navbar li').mouseout(function() {
       $(this).children('.dropdown-square').hide();
   });
 
